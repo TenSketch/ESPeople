@@ -1,0 +1,61 @@
+@use '../abstracts/variables' as *;
+
+// hero
+.hero {
+    background-color: $white;
+    padding: 100px 0;
+}
+
+// timeline
+.timeline-section {
+    background-color: $light-clr;
+    padding: 3rem 0;
+  
+    .section-title {
+      font-family: $font-primary;
+      color: $text-dark;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .section-subtitle {
+      font-family: $font-secondary;
+      color: $secondary-color;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .timeline-item {
+      &:nth-child(even) {
+        .timeline-title {
+          color: $primary-color;
+        }
+      }
+  
+      .timeline-title {
+        font-family: $font-primary;
+        font-size: 1.75rem;
+        color: $primary-color;
+      }
+  
+      .timeline-text {
+        font-family: $font-secondary;
+        font-size: 1.1rem;
+        color: $text-dark;
+        margin-bottom: 1rem;
+      }
+  
+      .timeline-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+      }
+  
+      @media (max-width: 767px) {
+        .timeline-img {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+  

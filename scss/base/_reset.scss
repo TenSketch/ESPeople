@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as *;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    // background-color: $primary-color;
+    // font-family: $font-josefin;
+    overflow-x: hidden;
+    // padding-top: $navbar-height;
+    // scroll-padding: map-get($sizes, 600)
+}
+
+h1 {
+    // font-family: $font-enchanting;
+    line-height: 1.3 !important;
+}
+
+// h2,
+// h3,
+// h4 {
+//     font-family: "DM Serif Display", serif;
+// }
+
+h4 {
+    line-height: 1.7;
+}
+
+li {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: $text-dark;
+    // &:hover{
+
+    //     text-decoration: none;
+    // }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* display: block; */
+}

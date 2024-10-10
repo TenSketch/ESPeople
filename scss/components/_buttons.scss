@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as *;
+
+// Mixin to handle button states with color inversion
+@mixin btn-state($color) {
+  &:hover {
+    background-color: $color !important;
+    color: invert($color) !important;
+  }
+  
+  &:focus-visible {
+    box-shadow: none;
+    background-color: $color !important;
+    border-color: $color !important;
+    color: invert($color) !important;
+  }
+  
+  &:active {
+    background-color: $color !important;
+    border-color: $color !important;
+    color: invert($color) !important;
+  }
+}
+
+// Base button styles
+.btn {
+  padding:0.8em 1.3em;
+  // margin: 1rem;
+}
+
+// Primary button
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $white;
+
+  @include btn-state($primary-color); // Pass the primary color to the mixin
+}
+// Outline Primary button
+.btn-outline-primary {
+  background-color: transparent;
+  color: $primary-color;
+  border-color: $primary-color;
+
+  @include btn-state($primary-color); // Use the primary color for inversion
+}
+
+// Secondary button
+.btn-secondary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  color: $white;
+
+  @include btn-state($secondary-color); // Pass the secondary color to the mixin
+}
+
+// Outline Secondary button
+.btn-outline-secondary {
+  background-color: transparent;
+  color: $secondary-color;
+  border-color: transparent;
+
+  @include btn-state($secondary-color); // Use the secondary color for inversion
+}

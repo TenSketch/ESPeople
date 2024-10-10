@@ -1,0 +1,19 @@
+
+@use '../abstracts/variables' as *;
+// Dark Theme Variables
+$background-color: #2C2C2C;
+$text-color: #F4F4F9;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+a {
+  color: $primary-color;
+}
+
+.navbar {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
