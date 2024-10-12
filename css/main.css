@@ -40,8 +40,8 @@ img {
 }
 
 footer {
-  background-color: #007BFF;
-  color: #2C2C2C;
+  background-color: #2C2C2C;
+  color: #F4F4F9;
 }
 
 .btn {
@@ -132,50 +132,109 @@ footer {
   color: lightgray !important;
 }
 
-.hero {
-  background-color: #fff;
-  padding: 100px 0;
+.btn-light {
+  background-color: #F4F4F9;
+  border-color: #F4F4F9;
+  color: #2C2C2C;
+}
+.btn-light:hover {
+  background-color: #F4F4F9 !important;
+  color: #0b0b06 !important;
+}
+.btn-light:focus-visible {
+  box-shadow: none;
+  background-color: #F4F4F9 !important;
+  border-color: #F4F4F9 !important;
+  color: #0b0b06 !important;
+}
+.btn-light:active {
+  background-color: #F4F4F9 !important;
+  border-color: #F4F4F9 !important;
+  color: #0b0b06 !important;
 }
 
-.timeline-section {
-  background-color: #F4F4F9;
-  padding: 3rem 0;
+.hero {
+  background-color: #fff;
 }
-.timeline-section .section-title {
-  font-family: "Montserrat", sans-serif;
-  color: hsl(240, 29%, 7%);
-  font-size: 2rem;
-  margin-bottom: 1rem;
+
+.power-collaboration {
+  background-color: #f9f9f9;
 }
-.timeline-section .section-subtitle {
-  font-family: "Lato", sans-serif;
-  color: #2C2C2C;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
-.timeline-section .timeline-item:nth-child(even) .timeline-title {
-  color: #007BFF;
+
+.stage {
+  padding: 20px;
+  text-align: center;
 }
-.timeline-section .timeline-item .timeline-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.75rem;
-  color: #007BFF;
+
+.stage-icon {
+  width: 80px;
+  margin-bottom: 15px;
+  font-size: 5rem;
+  color: yellow;
 }
-.timeline-section .timeline-item .timeline-text {
-  font-family: "Lato", sans-serif;
-  font-size: 1.1rem;
-  color: hsl(240, 29%, 7%);
-  margin-bottom: 1rem;
+
+.stage-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
-.timeline-section .timeline-item .timeline-img {
+
+.collaboration-img-container {
+  text-align: center;
+}
+
+.collaboration-img {
   max-width: 100%;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: 10px;
 }
-@media (max-width: 767px) {
-  .timeline-section .timeline-item .timeline-img {
-    margin-top: 1rem;
+
+.cta a {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .stage {
+    min-height: 250px;
   }
+}
+.training-section {
+  background-color: #F4F4F9;
+  padding: 2rem 0;
+}
+.training-section .section-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+.training-section .neumorphic-card {
+  background: linear-gradient(145deg, #dcdce0, #fff);
+  box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  width: 85%;
+  margin-inline: auto;
+}
+.training-section .neumorphic-card h4 {
+  font-size: 1.5rem;
+  margin-block: 1rem;
+  color: #333;
+}
+.training-section .neumorphic-card p {
+  font-size: 1rem;
+  color: #666;
+}
+.training-section .neumorphic-card:hover {
+  box-shadow: 10px 10px 30px #cfcfd4, -10px -10px 30px #ffffff;
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=main.css.map */

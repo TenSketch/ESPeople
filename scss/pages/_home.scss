@@ -3,59 +3,150 @@
 // hero
 .hero {
     background-color: $white;
-    padding: 100px 0;
+    // padding: 100px 0;
 }
 
 // timeline
-.timeline-section {
-    background-color: $light-clr;
-    padding: 3rem 0;
+// .timeline-section {
+//     background-color: $light-clr;
+//     padding: 3rem 0;
   
-    .section-title {
-      font-family: $font-primary;
-      color: $text-dark;
-      font-size: 2rem;
-      margin-bottom: 1rem;
+//     .section-title {
+//       font-family: $font-primary;
+//       color: $text-dark;
+//       font-size: 2rem;
+//       margin-bottom: 1rem;
+//     }
+  
+//     .section-subtitle {
+//       font-family: $font-secondary;
+//       color: $secondary-color;
+//       font-size: 1.2rem;
+//       margin-bottom: 2rem;
+//     }
+  
+//     .timeline-item {
+//       &:nth-child(even) {
+//         .timeline-title {
+//           color: $primary-color;
+//         }
+//       }
+  
+//       .timeline-title {
+//         font-family: $font-primary;
+//         font-size: 1.75rem;
+//         color: $primary-color;
+//       }
+  
+//       .timeline-text {
+//         font-family: $font-secondary;
+//         font-size: 1.1rem;
+//         color: $text-dark;
+//         margin-bottom: 1rem;
+//       }
+  
+//       .timeline-img {
+//         max-width: 100%;
+//         height: auto;
+//         border-radius: 0.5rem;
+//       }
+  
+//       @media (max-width: 767px) {
+//         .timeline-img {
+//           margin-top: 1rem;
+//         }
+//       }
+//     }
+//   }
+  
+
+// idea
+.power-collaboration {
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    // color: #333;
+}
+
+.stage {
+    padding: 20px;
+    text-align: center;
+}
+
+.stage-icon {
+    width: 80px;
+    margin-bottom: 15px;
+    font-size: 5rem;
+    color: yellow;
+}
+
+.stage-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.collaboration-img-container {
+    text-align: center;
+}
+
+.collaboration-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cta a {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .stage {
+        min-height: 250px;
     }
-  
-    .section-subtitle {
-      font-family: $font-secondary;
-      color: $secondary-color;
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
+}
+
+
+
+.training-section {
+  background-color: $light-clr;
+  padding: 2rem 0;
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  .neumorphic-card {
+    background: linear-gradient(145deg, $card-bg-dark, $white);
+    box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $card-shadow-light;
+    border-radius:10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    width: 85%;
+    margin-inline: auto;
+    h4 {
+      font-size: 1.5rem;
+      margin-block: 1rem;
+      color: #333;
     }
-  
-    .timeline-item {
-      &:nth-child(even) {
-        .timeline-title {
-          color: $primary-color;
-        }
-      }
-  
-      .timeline-title {
-        font-family: $font-primary;
-        font-size: 1.75rem;
-        color: $primary-color;
-      }
-  
-      .timeline-text {
-        font-family: $font-secondary;
-        font-size: 1.1rem;
-        color: $text-dark;
-        margin-bottom: 1rem;
-      }
-  
-      .timeline-img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 0.5rem;
-      }
-  
-      @media (max-width: 767px) {
-        .timeline-img {
-          margin-top: 1rem;
-        }
-      }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    &:hover {
+      box-shadow: 10px 10px 30px $card-shadow-dark, -10px -10px 30px $card-shadow-light;
+      transform: scale(1.05);
     }
   }
-  
+
+
+}
