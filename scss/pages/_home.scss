@@ -10,47 +10,47 @@
 // .timeline-section {
 //     background-color: $light-clr;
 //     padding: 3rem 0;
-  
+
 //     .section-title {
 //       font-family: $font-primary;
 //       color: $text-dark;
 //       font-size: 2rem;
 //       margin-bottom: 1rem;
 //     }
-  
+
 //     .section-subtitle {
 //       font-family: $font-secondary;
-//       color: $secondary-color;
+//       color: $secondary-clr;
 //       font-size: 1.2rem;
 //       margin-bottom: 2rem;
 //     }
-  
+
 //     .timeline-item {
 //       &:nth-child(even) {
 //         .timeline-title {
-//           color: $primary-color;
+//           color: $primary-clr;
 //         }
 //       }
-  
+
 //       .timeline-title {
 //         font-family: $font-primary;
 //         font-size: 1.75rem;
-//         color: $primary-color;
+//         color: $primary-clr;
 //       }
-  
+
 //       .timeline-text {
 //         font-family: $font-secondary;
 //         font-size: 1.1rem;
 //         color: $text-dark;
 //         margin-bottom: 1rem;
 //       }
-  
+
 //       .timeline-img {
 //         max-width: 100%;
 //         height: auto;
 //         border-radius: 0.5rem;
 //       }
-  
+
 //       @media (max-width: 767px) {
 //         .timeline-img {
 //           margin-top: 1rem;
@@ -58,7 +58,7 @@
 //       }
 //     }
 //   }
-  
+
 
 // idea
 .power-collaboration {
@@ -115,38 +115,185 @@
 
 
 .training-section {
-  background-color: $light-clr;
-  padding: 2rem 0;
+    background-color: $light-clr;
+    // padding: 2rem 0;
+
+    .section-title {
+        font-size: 2.5rem;
+        color: #333;
+    }
+
+    .neumorphic-card {
+        background: linear-gradient(145deg, $card-bg-dark, $white);
+        box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $card-shadow-light;
+        border-radius: 10px;
+        padding: 2rem;
+        transition: all 0.3s ease;
+        width: 85%;
+        margin-inline: auto;
+
+        h4 {
+            font-size: 1.5rem;
+            margin-block: 1rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        &:hover {
+            box-shadow: 10px 10px 30px $card-shadow-dark, -10px -10px 30px $card-shadow-light;
+            transform: scale(1.05);
+        }
+    }
+
+
+}
+
+// business org section
+.glassmorphism {
+    background: rgba(0, 123, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border-radius: 10px;
+}
+
+$hover-clr: #004bb5;
+
+.business-learning {
+    background: url(/img/dark-blue-bg-with-circles-3.png) no-repeat center center fixed;
+    background-size: cover;
+        // padding: 2rem 0;
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        // color: #333;
+    }
+
+    .learning-card {
+        //   background: linear-gradient(145deg, #dcdce0, #ffffff);
+        //   box-shadow: 20px 20px 60px $shadow-dark, -20px -20px 60px $shadow-light;
+        border-radius: 50px;
+        padding: 2rem;
+        // text-align: left;
+        transition: transform 0.3s ease;
+        // height: 0vh;
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            // color: #333;
+        }
+
+        .learning-question {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            // color: $primary-clr;
+        }
+
+        .learning-solution {
+            font-size: 1rem;
+            // color: #666;
+        }
+
+        .learning-img {
+           height: 300px;
+           aspect-ratio: 2/1;
+           margin-inline: auto;
+           object-fit: cover;
+           
+            border-radius: 10px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            // box-shadow: 10px 10px 30px $shadow-dark, -10px -10px 30px $shadow-light;
+        }
+    }
+
+    .cta {
+        margin-top: 3rem;
+
+        .btn-secondary {
+            background-color: $primary-clr;
+            border-color: $primary-clr;
+            font-size: 1.2rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-weight: bold;
+
+            &:hover {
+                background-color: $hover-clr;
+                border-color: $hover-clr;
+            }
+        }
+    }
+}
+
+// why choose us
+
+// Neumorphic style variables
+$light-bg: #F4F4F9;
+$card-bg: #ffffff;
+$card-shadow-light: #dcdce0;
+$card-shadow-dark: #cfcfd4;
+
+.why-choose-us {
+  background-color: $light-bg;
 
   .section-title {
     font-size: 2.5rem;
-    color: #333;
+    margin-bottom: 3rem;
   }
 
   .neumorphic-card {
-    background: linear-gradient(145deg, $card-bg-dark, $white);
-    box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $card-shadow-light;
-    border-radius:10px;
+    background: linear-gradient(145deg, $card-shadow-light, $card-bg);
+    border-radius: 50px;
+    box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $card-bg;
     padding: 2rem;
-    transition: all 0.3s ease;
-    width: 85%;
-    margin-inline: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    
     h4 {
-      font-size: 1.5rem;
-      margin-block: 1rem;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    
+    p, ul {
+      font-size: 1rem;
       color: #333;
+      text-align: left;
     }
 
-    p {
-      font-size: 1rem;
-      color: #666;
+    ul {
+      padding-left: 1.5rem;
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
     }
 
     &:hover {
-      box-shadow: 10px 10px 30px $card-shadow-dark, -10px -10px 30px $card-shadow-light;
       transform: scale(1.05);
+      box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.15), -25px -25px 75px rgba(255, 255, 255, 0.5);
     }
   }
 
+  .btn-secondary {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
 
+    &:hover {
+      background-color: darken(#007BFF, 10%);
+    }
+  }
 }

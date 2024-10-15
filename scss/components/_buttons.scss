@@ -29,38 +29,38 @@
 
 // Primary button
 .btn-primary {
-  background-color: $primary-color;
-  border-color: $primary-color;
+  background-color: $primary-clr;
+  border-color: $primary-clr;
   color: $white;
 
-  @include btn-state($primary-color); // Pass the primary color to the mixin
+  @include btn-state($primary-clr); // Pass the primary color to the mixin
 }
 
 // Outline Primary button
 .btn-outline-primary {
   background-color: transparent;
-  color: $primary-color;
-  border-color: $primary-color;
+  color: $primary-clr;
+  border-color: $primary-clr;
 
-  @include btn-state($primary-color); // Use the primary color for inversion
+  @include btn-state($primary-clr); // Use the primary color for inversion
 }
 
 // Secondary button
 .btn-secondary {
-  background-color: $secondary-color;
-  border-color: $secondary-color;
+  background-color: $secondary-clr;
+  border-color: $secondary-clr;
   color: $white;
 
-  @include btn-state($secondary-color); // Pass the secondary color to the mixin
+  @include btn-state($secondary-clr); // Pass the secondary color to the mixin
 }
 
 // Outline Secondary button
 .btn-outline-secondary {
   background-color: transparent;
-  color: $secondary-color;
+  color: $secondary-clr;
   border-color: transparent;
 
-  @include btn-state($secondary-color); // Use the secondary color for inversion
+  @include btn-state($secondary-clr); // Use the secondary color for inversion
 }
 
 // .btn-light

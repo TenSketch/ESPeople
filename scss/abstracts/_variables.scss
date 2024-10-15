@@ -1,6 +1,6 @@
 // Colors
-$primary-color: #007BFF;
-$secondary-color: #2C2C2C;
+$primary-clr: #007BFF;
+$secondary-clr: #2C2C2C;
 $white: #fff;
 $black: #000;
 $dark-clr: #2C2C2C;
@@ -19,13 +19,13 @@ $base-font-size: 16px;
 $base-line-height: 1.5;
 
 
-// $base-unit: 0.25rem;
-// $sizes: (); // An empty map to store the size values
+$base-unit: 0.25rem;
+$sizes: (); // An empty map to store the size values
 
-// @for $i from 1 through 32 {
-//   $size: $i * 25;
-//   $size-value: $base-unit * $i;
+@for $i from 1 through 32 {
+  $size: $i * 25;
+  $size-value: $base-unit * $i;
 
-//   // Store the sizes in the map
-//   $sizes: map-merge($sizes, ($size: $size-value));
-// }
+  // Store the sizes in the map
+  $sizes: map-merge($sizes, ($size: $size-value));
+}

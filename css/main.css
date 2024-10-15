@@ -1,3 +1,15 @@
+.pt-8 {
+  padding-top: 8rem;
+}
+
+.py-6 {
+  padding-block: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
 .attributions {
   opacity: 0.5;
 }
@@ -208,7 +220,6 @@ footer {
 }
 .training-section {
   background-color: #F4F4F9;
-  padding: 2rem 0;
 }
 .training-section .section-title {
   font-size: 2.5rem;
@@ -235,6 +246,113 @@ footer {
 .training-section .neumorphic-card:hover {
   box-shadow: 10px 10px 30px #cfcfd4, -10px -10px 30px #ffffff;
   transform: scale(1.05);
+}
+
+.glassmorphism {
+  background: rgba(0, 123, 255, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+}
+
+.business-learning {
+  background: url(/img/dark-blue-bg-with-circles-3.png) no-repeat center center fixed;
+  background-size: cover;
+}
+.business-learning .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.business-learning .learning-card {
+  border-radius: 50px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+.business-learning .learning-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.business-learning .learning-card .learning-question {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.business-learning .learning-card .learning-solution {
+  font-size: 1rem;
+}
+.business-learning .learning-card .learning-img {
+  height: 300px;
+  aspect-ratio: 2/1;
+  margin-inline: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.business-learning .learning-card:hover {
+  transform: scale(1.05);
+}
+.business-learning .cta {
+  margin-top: 3rem;
+}
+.business-learning .cta .btn-secondary {
+  background-color: #007BFF;
+  border-color: #007BFF;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.business-learning .cta .btn-secondary:hover {
+  background-color: #004bb5;
+  border-color: #004bb5;
+}
+
+.why-choose-us {
+  background-color: #F4F4F9;
+}
+.why-choose-us .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.why-choose-us .neumorphic-card {
+  background: linear-gradient(145deg, #dcdce0, #ffffff);
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #ffffff;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.why-choose-us .neumorphic-card h4 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.why-choose-us .neumorphic-card p, .why-choose-us .neumorphic-card ul {
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+}
+.why-choose-us .neumorphic-card ul {
+  padding-left: 1.5rem;
+}
+.why-choose-us .neumorphic-card ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+.why-choose-us .neumorphic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.15), -25px -25px 75px rgba(255, 255, 255, 0.5);
+}
+.why-choose-us .btn-secondary {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.why-choose-us .btn-secondary:hover {
+  background-color: #0062cc;
 }
 
 /*# sourceMappingURL=main.css.map */
