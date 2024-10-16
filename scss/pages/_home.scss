@@ -59,7 +59,36 @@
 //     }
 //   }
 
+// about us
+.about-us {
+    background-color: #f4f4f9;
+    .section-title {
+      font-size: 2rem;
+      color: #333;
+    }
+    
+    .info-box {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      
+      h4 {
+        font-size: 1.5rem;
+        color: #007bff;
+      }
+      
+      p {
+        font-size: 1rem;
+        color: #666;
+      }
+    }
+    
+ 
+  }
 
+  
 // idea
 .power-collaboration {
     background-color: #f9f9f9;
@@ -124,7 +153,7 @@
     }
 
     .neumorphic-card {
-        background: linear-gradient(145deg, $card-bg-dark, $white);
+        background: linear-gradient(145deg, $card-dark, $white);
         box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $card-shadow-light;
         border-radius: 10px;
         padding: 2rem;
@@ -177,7 +206,7 @@ $hover-clr: #004bb5;
     .learning-card {
         //   background: linear-gradient(145deg, #dcdce0, #ffffff);
         //   box-shadow: 20px 20px 60px $shadow-dark, -20px -20px 60px $shadow-light;
-        border-radius: 50px;
+        border-radius: 10px;
         padding: 2rem;
         // text-align: left;
         transition: transform 0.3s ease;
@@ -218,32 +247,32 @@ $hover-clr: #004bb5;
     .cta {
         margin-top: 3rem;
 
-        .btn-secondary {
-            background-color: $primary-clr;
-            border-color: $primary-clr;
-            font-size: 1.2rem;
-            padding: 0.75rem 1.5rem;
-            border-radius: 30px;
-            font-weight: bold;
+        // .btn-secondary {
+        //     background-color: $primary-clr;
+        //     border-color: $primary-clr;
+        //     font-size: 1.2rem;
+        //     padding: 0.75rem 1.5rem;
+        //     border-radius: 30px;
+        //     font-weight: bold;
 
-            &:hover {
-                background-color: $hover-clr;
-                border-color: $hover-clr;
-            }
-        }
+        //     &:hover {
+        //         background-color: $hover-clr;
+        //         border-color: $hover-clr;
+        //     }
+        // }
     }
 }
 
 // why choose us
 
 // Neumorphic style variables
-$light-bg: #F4F4F9;
-$card-bg: #ffffff;
+$light-clr: #F4F4F9;
+$white: #ffffff;
 $card-shadow-light: #dcdce0;
 $card-shadow-dark: #cfcfd4;
 
 .why-choose-us {
-  background-color: $light-bg;
+  background-color: $light-clr;
 
   .section-title {
     font-size: 2.5rem;
@@ -251,9 +280,9 @@ $card-shadow-dark: #cfcfd4;
   }
 
   .neumorphic-card {
-    background: linear-gradient(145deg, $card-shadow-light, $card-bg);
-    border-radius: 50px;
-    box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $card-bg;
+    background: linear-gradient(145deg, $card-shadow-light, $white);
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $white;
     padding: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
@@ -283,17 +312,111 @@ $card-shadow-dark: #cfcfd4;
     }
   }
 
-  .btn-secondary {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
-    border: none;
+//   .btn-secondary {
+//     background-color: #007BFF;
+//     color: #fff;
+//     padding: 0.75rem 1.5rem;
+//     font-size: 1.25rem;
+//     border: none;
+//     border-radius: 50px;
+//     transition: background-color 0.3s ease;
+
+//     &:hover {
+//       background-color: darken(#007BFF, 10%);
+//     }
+//   }
+}
+
+// FAQ
+
+
+.faq-section {
+  background-color: $light-clr;
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+
+  .accordion-item {
+    background: linear-gradient(145deg, $card-shadow-light, $white);
     border-radius: 50px;
-    transition: background-color 0.3s ease;
+    box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $white;
+    margin-bottom: 1rem;
+
+    .accordion-button {
+      border-radius: 50px;
+      padding: 1rem 1.5rem;
+      background: none;
+      color: #333;
+      font-size: 1.1rem;
+      transition: box-shadow 0.3s ease;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &::after {
+        background-image: none;
+        content: '\f078'; /* Font Awesome chevron down icon */
+        font-family: "FontAwesome";
+        font-size: 1rem;
+        color: #333;
+        margin-left: auto;
+      }
+
+      &.collapsed::after {
+        content: '\f054'; /* Font Awesome chevron right icon */
+      }
+    }
+
+    .accordion-body {
+      background-color: $white;
+      padding: 1.25rem;
+      font-size: 1rem;
+      color: #666;
+    }
 
     &:hover {
-      background-color: darken(#007BFF, 10%);
+      transform: scale(1.02);
+      box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.1), -25px -25px 75px rgba(255, 255, 255, 0.5);
     }
   }
 }
+
+.contact-section {
+    background-color: #F4F4F9; // Light background for the section
+    padding: 3rem 0;
+  
+    .section-title {
+      font-size: 2.5rem;
+      color: #333;
+    }
+  
+    .form-floating {
+      margin-bottom: 1.5rem;
+  
+      .form-control {
+        border: none;
+        border-bottom: 2px solid #ccc;
+        border-radius: 0;
+        box-shadow: none;
+        transition: border-color 0.3s ease;
+        background-color: transparent;
+        &:focus {
+          border-bottom-color: #333;
+          outline: 0;
+          box-shadow: none;
+        }
+      }
+  
+      label {
+        color: #777;
+        font-size: 1rem;
+      }
+    }
+  
+   
+  }
+  

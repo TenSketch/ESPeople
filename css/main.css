@@ -169,6 +169,29 @@ footer {
   background-color: #fff;
 }
 
+.about-us {
+  background-color: #f4f4f9;
+}
+.about-us .section-title {
+  font-size: 2rem;
+  color: #333;
+}
+.about-us .info-box {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.about-us .info-box h4 {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+.about-us .info-box p {
+  font-size: 1rem;
+  color: #666;
+}
+
 .power-collaboration {
   background-color: #f9f9f9;
 }
@@ -227,7 +250,7 @@ footer {
 }
 .training-section .neumorphic-card {
   background: linear-gradient(145deg, #dcdce0, #fff);
-  box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #dcdce0;
   border-radius: 10px;
   padding: 2rem;
   transition: all 0.3s ease;
@@ -244,7 +267,7 @@ footer {
   color: #666;
 }
 .training-section .neumorphic-card:hover {
-  box-shadow: 10px 10px 30px #cfcfd4, -10px -10px 30px #ffffff;
+  box-shadow: 10px 10px 30px #cfcfd4, -10px -10px 30px #dcdce0;
   transform: scale(1.05);
 }
 
@@ -265,7 +288,7 @@ footer {
   margin-bottom: 3rem;
 }
 .business-learning .learning-card {
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 2rem;
   transition: transform 0.3s ease;
 }
@@ -294,18 +317,6 @@ footer {
 .business-learning .cta {
   margin-top: 3rem;
 }
-.business-learning .cta .btn-secondary {
-  background-color: #007BFF;
-  border-color: #007BFF;
-  font-size: 1.2rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  font-weight: bold;
-}
-.business-learning .cta .btn-secondary:hover {
-  background-color: #004bb5;
-  border-color: #004bb5;
-}
 
 .why-choose-us {
   background-color: #F4F4F9;
@@ -316,7 +327,7 @@ footer {
 }
 .why-choose-us .neumorphic-card {
   background: linear-gradient(145deg, #dcdce0, #ffffff);
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #ffffff;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -342,17 +353,179 @@ footer {
   transform: scale(1.05);
   box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.15), -25px -25px 75px rgba(255, 255, 255, 0.5);
 }
-.why-choose-us .btn-secondary {
-  background-color: #007BFF;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
-  border: none;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
+
+.faq-section {
+  background-color: #F4F4F9;
 }
-.why-choose-us .btn-secondary:hover {
-  background-color: #0062cc;
+.faq-section .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+.faq-section .accordion-item {
+  background: linear-gradient(145deg, #dcdce0, #ffffff);
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #ffffff;
+  margin-bottom: 1rem;
+}
+.faq-section .accordion-item .accordion-button {
+  border-radius: 50px;
+  padding: 1rem 1.5rem;
+  background: none;
+  color: #333;
+  font-size: 1.1rem;
+  transition: box-shadow 0.3s ease;
+}
+.faq-section .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+.faq-section .accordion-item .accordion-button::after {
+  background-image: none;
+  content: "\f078"; /* Font Awesome chevron down icon */
+  font-family: "FontAwesome";
+  font-size: 1rem;
+  color: #333;
+  margin-left: auto;
+}
+.faq-section .accordion-item .accordion-button.collapsed::after {
+  content: "\f054"; /* Font Awesome chevron right icon */
+}
+.faq-section .accordion-item .accordion-body {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  font-size: 1rem;
+  color: #666;
+}
+.faq-section .accordion-item:hover {
+  transform: scale(1.02);
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.1), -25px -25px 75px rgba(255, 255, 255, 0.5);
+}
+
+.contact-section {
+  background-color: #F4F4F9;
+  padding: 3rem 0;
+}
+.contact-section .section-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+.contact-section .form-floating {
+  margin-bottom: 1.5rem;
+}
+.contact-section .form-floating .form-control {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+  background-color: transparent;
+}
+.contact-section .form-floating .form-control:focus {
+  border-bottom-color: #333;
+  outline: 0;
+  box-shadow: none;
+}
+.contact-section .form-floating label {
+  color: #777;
+  font-size: 1rem;
+}
+
+.industries-we-serve {
+  /* Non-Profit Section */
+  /* Government Section */
+  /* Education Section */
+  /* Animations */
+}
+.industries-we-serve .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.industries-we-serve .industry-section {
+  position: relative;
+  padding: 4rem 0;
+  /* Wave Shape */
+  /* Blob Shape */
+}
+.industries-we-serve .industry-section .industry-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.industries-we-serve .industry-section .industry-programs {
+  list-style: none;
+  padding: 0;
+}
+.industries-we-serve .industry-section .industry-programs li {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+.industries-we-serve .industry-section .industry-programs li i {
+  color: #007BFF;
+  margin-right: 0.5rem;
+}
+.industries-we-serve .industry-section .stats {
+  font-size: 1.1rem;
+}
+.industries-we-serve .industry-section .stats i {
+  color: #007BFF;
+  margin-right: 0.5rem;
+}
+.industries-we-serve .industry-section .industry-icon {
+  width: 80%;
+  max-width: 250px;
+  margin-bottom: 2rem;
+}
+.industries-we-serve .industry-section .wave-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url(/img/wave.svg) no-repeat;
+  background-size: cover;
+}
+.industries-we-serve .industry-section .blob-shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  height: 250px;
+  background: url("img/blob-shape.svg") no-repeat;
+  background-size: contain;
+}
+.industries-we-serve .nonprofit-section {
+  background-color: #f4f4f9;
+}
+.industries-we-serve .government-section {
+  background-color: #eef7fa;
+}
+.industries-we-serve .education-section {
+  background-color: #f9f6f1;
+}
+.industries-we-serve .industry-icon {
+  animation: fadeInUp 1s ease-in-out;
+}
+.industries-we-serve .industry-title {
+  animation: fadeInDown 1s ease-in-out;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
